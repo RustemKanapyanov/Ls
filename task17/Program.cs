@@ -24,3 +24,6 @@
 // {
 //     Console.WriteLine("Невозможно определить координатную четверть");
 // }
+// double n = Math.Sqrt(25);
+// n = Math.Pow(n, 2);
+// Console.WriteLine(n);
