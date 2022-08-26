@@ -2,13 +2,14 @@
 // Напишите программу, которая покажет количество чётных чисел в массиве.
 // [345, 897, 568, 234] -> 2
 
-int[] numbers = { 345, 897, 568, 234 }; // Массив случайных чисел 
-
-for (int i = 0; i < numbers.Length; i++) // Цикл
+int[] numbers = { 345, 897, 568, 234 };
+int count = 0;
+for (int i = 0; i < numbers.Length; i++)
 {
-    if (numbers[i] % 2 == 0) // Если число делится на 2 без остатка
+    if (numbers[i] % 2 == 0)
     {
-        Console.WriteLine(numbers[i]); // Вывод результата
+        Console.WriteLine(numbers[i]);
+        count++;
     }
 }
-Console.WriteLine("Количество четных чисел: 2");
+Console.WriteLine($"Чётных чисел в массиве: {count}");
