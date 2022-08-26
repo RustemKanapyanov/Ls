@@ -70,8 +70,8 @@ void PrintArry(int[] coll)
 } 
 
 
-string seriesNew = RemovingSpaces(seriesOfNumbers);
+string seriesNew = RemovingSpaces(seriesOffNumbers);
 
 int[] arrayOfNumbers =  ArrayOfNumbers(seriesNew);
 
-PrintArry(arrayOfNumbers);
+PrintArry(arrayOffNumbers);

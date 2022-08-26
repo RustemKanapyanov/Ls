@@ -8,10 +8,10 @@
     string str = Console.ReadLine();
     int n = Convert.ToInt32(str);
     int count = 0;
-        while (n > 0)
+    while (n > 0)
     {
         count++;
         n = n / 10;
     }
-     Console.WriteLine($"Данное число содержит цифр: " + count);
+    Console.WriteLine($"Данное число содержит цифр: " + count);
 }

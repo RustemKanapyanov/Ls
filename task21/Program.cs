@@ -6,7 +6,7 @@
 
 // A (7,-5, 0); B (1,-1,9) -> 11.53
 
-int[] dot1 = new int[7];
+int[] dot1 = new int[3];
 int[] dot2 = new int[3];
 Console.Clear();
 Console.WriteLine("Давайте определим расстояние между точками в пространстве по их координатам ");
@@ -23,7 +23,7 @@ Console.WriteLine("Введите координаты второй точки:"
 for (int i = 0; i < 3; i++)
     {
         Console.WriteLine("Введите координату {0:G}\n",i+1);
-        dot1[i]=Convert.ToInt32(Console.ReadLine()); 
+        dot2[i]=Convert.ToInt32(Console.ReadLine()); 
     }
 double[] pow2= new double[3];
 for (int i = 0; i <3; i++)
