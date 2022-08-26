@@ -3,7 +3,6 @@
 // [3, 7, 23, 12] -> 19
 // [-4, -6, 89, 6] -> 0
 
-
 int[] A = new int[5];
 float s = 0;
 Random rnd = new Random();
