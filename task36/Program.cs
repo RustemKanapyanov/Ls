@@ -3,18 +3,30 @@
 // [3, 7, 23, 12] -> 19
 // [-4, -6, 89, 6] -> 0
 
-int[] A = new int[5];
-float s = 0;
-Random rnd = new Random();
-for (int i = 0; i < 10; i++)
+Console.WriteLine("Введите размер массива ");
+int array = Convert.ToInt32(Console.ReadLine());
+int[] numbers = new int[array];
+int sum = 0;
+FillArrayRandomNumbers(numbers);
+PrintArray(numbers);
+
+for (int i = 0; i < numbers.Length; i += 2)
+    sum = sum + numbers[i];
+Console.WriteLine($"Массив {numbers.Length} = {sum} <- сумма элементов на нечётных позициях");
+
+void FillArrayRandomNumbers(int[] numbers)
 {
-    A[i] = rnd.Next(1, 20);
-    Console.WriteLine(A[i]);
-
-    if (A[i] % 2 != 0)
-
-        s += A[i];
-
+    for (int i = 0; i < numbers.Length; i++)
+    {
+        numbers[i] = new Random().Next(1, 100);
+    }
 }
-Console.WriteLine("s={0}", s);
-Console.ReadKey();
+
+void PrintArray(int[] numbers)
+{
+    for (int i = 0; i < numbers.Length; i++)
+    {
+        Console.Write(numbers[i] + "  ");
+    }
+    Console.WriteLine();
+}
