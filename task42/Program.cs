@@ -8,9 +8,9 @@ Console.WriteLine($"Введите число ");
 int N = Convert.ToInt32(Console.ReadLine());
 GetBinaryView(N);
 
-void  GetBinaryView( int number)
+void GetBinaryView(int number)
 {
-    if (number <=0 ) return;
+    if (number <= 0) return;
     GetBinaryView(number / 2);
     Console.Write(number % 2);
 }

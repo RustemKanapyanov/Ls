@@ -20,7 +20,7 @@ else
     Console.WriteLine("Треугольник с заданными сторонами не существует");
 }
 
-bool IsTriangleExist(int a, int b, int c);
+bool IsTriangleExist(int a, int b, int c)
 {
     bool isExist = false; // Треугольник может существовать
     if (a < b + c && b < a + c && c < a + b)

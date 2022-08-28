@@ -15,13 +15,13 @@ for (int i = 0; i < array.Length; i++)
 }
 for (int i = 0; i < array.Length; i++)
 {
-    Console.Write($"{array[i],4}");
+    Console.Write($"{array[i],3}");
 }
 int count = 0;
 for (int i = 0; i < array.Length; i++)
 {
-    if (i > 10 && i < 100)
+    if (array[i] > 9 && array[i] < 100)
         count++;
 }
-Console.Write ("    Количество Элементов Массива = ");
+Console.Write("      Количество Элементов Массива = ");
 Console.WriteLine(count);
