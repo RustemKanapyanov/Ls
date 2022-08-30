@@ -5,11 +5,11 @@
 
 Console.WriteLine("Введите число ");
 int a = Convert.ToInt32(Console.ReadLine());
-    if (a > 99)
+if (a > 99)
 {
-Console.WriteLine(Convert.ToString(a)[2]);
+    Console.WriteLine(Convert.ToString(a)[2]);
 }
-    else
+else
 {
     Console.WriteLine("Третьей цифры нет");
 }

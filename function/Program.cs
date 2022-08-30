@@ -1,4 +1,4 @@
-﻿// // функция удаления пробелов из строки 
+﻿/* // // функция удаления пробелов из строки 
 string RemovingSpaces(string series)
 {
     string seriesNew = "";
@@ -80,7 +80,8 @@ string seriesNew = RemovingSpaces(seriesOffNumbers);
 int[] arrayOfNumbers = ArrayOfNumbers(seriesNew);
 PrintArry(arrayOffNumbers);
 
-Вывод одномерного массива
+// Вывод одномерного массива
+
 void PrintArray(int[] array)
 {
     Console.Write("[ ");
@@ -91,7 +92,7 @@ void PrintArray(int[] array)
     Console.Write("]");
 }
 
-заполнение одномерного массива случайными числами от 100 до 999
+// Заполнение одномерного массива случайными числами от 100 до 999
 
 void FillArrayRandomNumbers(int[] numbers)
 {
@@ -100,4 +101,3 @@ void FillArrayRandomNumbers(int[] numbers)
         numbers[i] = new Random().Next(100, 1000);
     }
 }
-
